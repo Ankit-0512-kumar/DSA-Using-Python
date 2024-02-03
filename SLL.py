@@ -87,7 +87,7 @@ class SLLIterator:
         data = self.current.item
         self.current = self.current.next
         return data    
-"""
+
 # Driver code
 mylist = SLL()
 mylist.insert_at_start(20)
@@ -100,13 +100,13 @@ mylist.insert_after(mylist.search(38), 39)
 mylist.insert_after(mylist.search(20), 22)
 
 # Delete the item in list
-# mylist.delete_item(44)
-# mylist.delete_item(38)
-# for x in mylist:
-#     print(x, end=' ')
+mylist.delete_item(44)
+mylist.delete_item(38)
+for x in mylist:
+    print(x, end=' ')
 
 mylist.print_list()            
-"""
+
             
 
              
