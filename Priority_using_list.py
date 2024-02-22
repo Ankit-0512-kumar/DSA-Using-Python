@@ -31,7 +31,7 @@ p.push('sttr',8)
 p.push('verma',9) 
 p.push('shaym',11) 
 
-while p.is_empty():
+while not p.is_empty():
     print(p.pop())
 
 
