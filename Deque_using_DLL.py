@@ -1,7 +1,7 @@
 class Node:
     def __init__(self,item=None,prev=None,next=None):
         self.prev=prev
-        self.item=item
+        self.item=ite
         self.next=next
 
 class Deque:
