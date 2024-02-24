@@ -11,7 +11,7 @@ class DLL:
         self.start = start
 
     def is_empty(self):
-        return self.start == Non
+        return self.start == None
     
     def insert_at_start(self,data):
         n = Node(None,data,self.start)
