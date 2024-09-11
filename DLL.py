@@ -109,7 +109,7 @@ mylist.insert_at_start(10)
 mylist.insert_at_last(40)
 mylist.insert_at_last(50)
 mylist.insert_after(mylist.search(20), 25)
-#mylist.insert_after(mylist.search(40), 45)
+mylist.insert_after(mylist.search(40), 45)
 # mylist.print_list()   
 for x in mylist:
     print(x,end=" ")
