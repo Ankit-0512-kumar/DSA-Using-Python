@@ -2,7 +2,7 @@ class Node:
     def __init__(self,item=None,prev=None,next=None):
         self.item=item
         self.prev=prev
-        self.next=next
+        self.next=nex
 
 class CDLL:
     def __init__(self,start=None):
