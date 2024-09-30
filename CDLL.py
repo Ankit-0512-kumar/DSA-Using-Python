@@ -62,7 +62,7 @@ class CDLL:
         temp=self.start
         if temp is not None:
             print(temp.item,end=' ')
-            temp=temp.nex
+            temp=temp.next
 
             while temp is not self.start:
                 print(temp.item,end=' ')
