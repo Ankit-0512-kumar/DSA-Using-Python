@@ -4,7 +4,7 @@ class Node:
         self.item=item
         self.next=next
 
-class Deque:
+class Deque
     def __init__(self):
         self.front=None
         self.rear=None
