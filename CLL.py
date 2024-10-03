@@ -5,7 +5,7 @@ class Node:
 
 
 class CLL:
-    def __init__(self,last=None):
+    def __init__(self,last=None)
         self.last = last
 
     def is_empty(self):
