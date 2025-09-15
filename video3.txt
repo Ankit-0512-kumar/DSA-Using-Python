@@ -1,0 +1,69 @@
+ssh root@10.0.1.12
+root@verdin-imx8mp-15560566:~# cd /tmp 
+root@verdin-imx8mp-15560566:/tmp# ls
+dbus-ZTtFz6dZEE
+dbus-ckXjXVacfx
+g2d_opencl_kernel.bin
+ippis_tft
+pulse-PKdhtXMmr18n
+style.css
+systemd-private-b64f2963d9974eefa0253815a609c5fa-rngd.service-hZ5en6
+systemd-private-b64f2963d9974eefa0253815a609c5fa-systemd-logind.service-yDJe0z
+systemd-private-b64f2963d9974eefa0253815a609c5fa-systemd-timesyncd.service-mbWoQJ
+tftapp1509
+root@verdin-imx8mp-15560566:/tmp# ls -la
+total 268
+drwxrwxrwt  8 root root    300 Jan 23 07:14 .
+drwxr-xr-x 24 root root   4096 Jan  6 14:28 ..
+-r--r--r--  1 root root     11 Jan 23 00:20 .X0-lock
+drwxrwxrwt  2 root root     60 Jan 23 00:20 .X11-unix
+-rw-r--r--  1 root root     15 Jan 23 00:20 .automount-BOOT-mmcblk2p1
+srwxrwxrwx  1 root root      0 Jan 23 01:59 dbus-ZTtFz6dZEE
+srwxrwxrwx  1 root root      0 Jan 23 00:21 dbus-ckXjXVacfx
+-rw-r--r--  1 root root  58435 Jan 23 00:20 g2d_opencl_kernel.bin
+-rwxrwxrwx  1 root root 192744 Jan 23 07:14 ippis_tft
+drwx------  2 root root     40 Jan 23 00:21 pulse-PKdhtXMmr18n
+-rwxr-xr-x  1 root root   2987 Jan 23 03:35 style.css
+drwx------  3 root root     60 Jan 23 00:20 systemd-private-b64f2963d9974eefa0253815a609c5fa-rngd.service-hZ5en6
+drwx------  3 root root     60 Jan 23 00:20 systemd-private-b64f2963d9974eefa0253815a609c5fa-systemd-logind.service-yDJe0z
+drwx------  3 root root     60 Dec 24 10:50 systemd-private-b64f2963d9974eefa0253815a609c5fa-systemd-timesyncd.service-mbWoQJ
+drwxr-xr-x  3 root root     60 Jan 23 00:33 tftapp1509
+root@verdin-imx8mp-15560566:/tmp# exit                
+logout
+Connection to 10.0.1.12 closed.
+ptcs@ptcs-VirtualBox:~/Desktop/tftapp1509/2.source$ scp forest.jpg  root@10.0.1.12:/tmp
+forest.jpg                                    100%   10KB 226.6KB/s   00:00    
+ptcs@ptcs-VirtualBox:~/Desktop/tftapp1509/2.source$ scp river_video.mp4 root@10.0.1.12:/tmp
+river_video.mp4                               100% 9762KB 124.8KB/s   01:18    
+ptcs@ptcs-VirtualBox:~/Desktop/tftapp1509/2.source$ ssh root@10.0.1.12
+root@verdin-imx8mp-15560566:~# cd /tmp/
+root@verdin-imx8mp-15560566:/tmp# ls -la
+total 10044
+drwxrwxrwt  8 root root     340 Jan 23 07:17 .
+drwxr-xr-x 24 root root    4096 Jan  6 14:28 ..
+-r--r--r--  1 root root      11 Jan 23 00:20 .X0-lock
+drwxrwxrwt  2 root root      60 Jan 23 00:20 .X11-unix
+-rw-r--r--  1 root root      15 Jan 23 00:20 .automount-BOOT-mmcblk2p1
+srwxrwxrwx  1 root root       0 Jan 23 01:59 dbus-ZTtFz6dZEE
+srwxrwxrwx  1 root root       0 Jan 23 00:21 dbus-ckXjXVacfx
+-rw-r--r--  1 root root   10444 Jan 23 07:17 forest.jpg
+-rw-r--r--  1 root root   58435 Jan 23 00:20 g2d_opencl_kernel.bin
+-rwxrwxrwx  1 root root  192744 Jan 23 07:14 ippis_tft
+drwx------  2 root root      40 Jan 23 00:21 pulse-PKdhtXMmr18n
+-rw-r--r--  1 root root 9996744 Jan 23 07:18 river_video.mp4
+-rwxr-xr-x  1 root root    2987 Jan 23 03:35 style.css
+drwx------  3 root root      60 Jan 23 00:20 systemd-private-b64f2963d9974eefa0253815a609c5fa-rngd.service-hZ5en6
+drwx------  3 root root      60 Jan 23 00:20 systemd-private-b64f2963d9974eefa0253815a609c5fa-systemd-logind.service-yDJe0z
+drwx------  3 root root      60 Dec 24 10:50 systemd-private-b64f2963d9974eefa0253815a609c5fa-systemd-timesyncd.service-mbWoQJ
+drwxr-xr-x  3 root root      60 Jan 23 00:33 tftapp1509
+root@verdin-imx8mp-15560566:/tmp# chmod 777 ippis_tft 
+root@verdin-imx8mp-15560566:/tmp# ./ippis_tft 
+VIDEO_FILES[0] Updated: /tmp/river_video.mp4
+IMAGE_FILES[0] Updated: /tmp/forest.jpg
+TEXTS[0] Updated: Life is a journey filled with unexpected turns, and every step we take shapes the your setbacks. Each day is a new opportunity to start agaou are capable of more h Believe in yourself, for you are capable of more than you know. Each day is a new opportunity to start agaou are capable of more h Believe in yourself, for you are capable of more than you know. 
+inside create_video_view
+Placeholder for video view created and added to stack.
+First valid video path received. Initializing GStreamer with: /tmp/river_video.mp4
+
+** (ippis_tft:1823): ERROR **: 07:19:36.120: Failed to create GStreamer elements!
+Trace/breakpoint trap
